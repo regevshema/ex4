@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee</title>
+</head>
+
+<body>
+    <form action="http://localhost/edit.php" method="get">
+        <h2>welcome to the coffee test</h2><br>
+        <label>full name</label> <input type="text" name="fname" pattern="[A-Za-z]+[ ][A-Za-z]+" required value=""
+            placeholder="enter your name">
+        <p>select your gender: <select name="gender" class="gen"></p>
+        <option value="male">male</option>
+        <option value="female">female</option>
+        <option value="other">other</option>
+        </select><br>
+        <p>how many cups of coffee do you drink daily?
+            <input type="number" name="cc" min="0" max="5">
+        </p>
+        <p>choose the intensity level of your coffee:
+            <label>1<input type="radio" name="int" value="1"></label>
+            <label>2<input type="radio" name="int" value="2"></label>
+            <label>3<input type="radio" name="int" value="3"></label>
+        </p>
+        <input type="submit" value="submit">
+    </form>
+
+</body>
+
+</html>
